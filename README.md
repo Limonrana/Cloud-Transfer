@@ -4,6 +4,8 @@
 
 This project was bootstrapped with Express Js.
 
+Inside the server directory, you have to run:
+
 ### `yarn install`
 
 ### `yarn dev` for development
