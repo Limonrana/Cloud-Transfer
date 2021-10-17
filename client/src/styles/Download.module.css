@@ -1,0 +1,44 @@
+.downloadArea {
+  width: 100%;
+  max-width: 30rem;
+  min-width: 30rem;
+  background-color: #fff;
+  box-shadow: 0 10px 60px #dae5ff;
+  border-radius: 24px;
+  padding: 2rem 1.875rem 2rem 1.875rem;
+  margin: 0.625rem;
+  text-align: center;
+}
+
+.mainTitle {
+  margin-bottom: 5px;
+}
+
+.expires {
+  margin-top: 0;
+  color: #222222cf;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-top: 0;
+  color: #222222cf;
+}
+
+.downloadList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.singleDownload {
+  border-bottom: 1px solid #dadada;
+  cursor: pointer;
+  padding: 10px 10px;
+  background: #f1f1f1;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}

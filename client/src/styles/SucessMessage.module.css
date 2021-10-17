@@ -1,0 +1,242 @@
+.SucessMessage {
+  height: 100vh;
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperAlert {
+  max-width: 25rem;
+  overflow: hidden;
+  border-radius: 12px;
+  border: thin solid #ddd;
+}
+
+.topHalf {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  min-height: 250px;
+  position: relative;
+  padding: 40px 0;
+  background: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(
+    45deg,
+    #5ecb89,
+    rgba(160, 235, 208, 0.753)
+  );
+}
+
+.topHalf p {
+  margin-bottom: 30px;
+}
+svg {
+  fill: white;
+}
+.topHalf h1 {
+  font-size: 2.25rem;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 2px rgba(128, 128, 128, 0.6);
+}
+
+/* Original Author of Bubbles Animation */
+.bg__bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.li_bubble_1,
+.li_bubble_2,
+.li_bubble_3,
+.li_bubble_4,
+.li_bubble_5,
+.li_bubble_6,
+.li_bubble_7,
+.li_bubble_8,
+.li_bubble_9,
+.li_bubble_10 {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15); /* fade(green, 75%);*/
+  bottom: -160px;
+
+  -webkit-animation: square 20s infinite;
+  animation: square 20s infinite;
+
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.li_bubble_1 {
+  left: 10%;
+}
+.li_bubble_2 {
+  left: 20%;
+
+  width: 80px;
+  height: 80px;
+
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+.li_bubble_3 {
+  left: 25%;
+  animation-delay: 4s;
+}
+.li_bubble_4 {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+
+  animation-duration: 22s;
+
+  background-color: rgba(white, 0.3); /* fade(white, 25%); */
+}
+.li_bubble_5 {
+  left: 70%;
+}
+.li_bubble_6 {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+
+  animation-delay: 3s;
+  background-color: rgba(white, 0.2); /* fade(white, 20%); */
+}
+.li_bubble_7 {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+
+  animation-delay: 7s;
+}
+.li_bubble_8 {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+
+  animation-delay: 15s;
+  animation-duration: 40s;
+}
+.li_bubble_9 {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+
+  animation-delay: 2s;
+  animation-duration: 40s;
+  background-color: rgba(white, 0.3); /*fade(white, 30%);*/
+}
+.li_bubble_10 {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+
+  animation-delay: 11s;
+}
+
+@-webkit-keyframes square {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px) rotate(600deg);
+  }
+}
+
+.bottomHalf {
+  align-items: center;
+  padding: 35px;
+}
+.bottomHalf p {
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.sucessBtn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 18px;
+  background-color: #5ecb89;
+  text-shadow: 0 1px rgba(128, 128, 128, 0.75);
+}
+.sucessBtn:hover {
+  background-color: #019871;
+}
+
+/* Input CSS */
+.input_copy_wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.input_copy {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.input_copy .icon img {
+  max-width: 25px;
+}
+.input_copy .icon {
+  padding-left: 10px;
+}
+
+.input_copy .form_control {
+  padding: 10px 15px;
+  background: #eee;
+  border: 2px solid #5ecb89;
+  color: #929292;
+  font-size: 15px;
+  flex: 1;
+}
+
+.input_copy .form_control:focus {
+  color: #212529;
+  background-color: transparent;
+  border-color: transparent !important;
+}
+
+/* click animation */
+
+.flashBG {
+  animation-name: flash;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+@keyframes flash {
+  0% {
+    background: #28a745;
+  }
+  100% {
+    background: transparent;
+  }
+}
